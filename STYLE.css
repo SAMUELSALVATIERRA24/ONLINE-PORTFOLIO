@@ -1,67 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Online Portfolio</title>
-    <link rel="stylesheet" href="STYLE.css">
-</head>
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
+header {
+    background-color: antiquewhite;
+    color: black;
+    padding: 0;
+    margin: 0;
+    width: 100vw; /* Ensure full viewport width */
+    box-sizing: border-box;
+}
 
-<body>
-    
-    
-    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/01/26/01/20250126011735-53Z8P6QX.js"></script>
-    
-    
-    <header >
-        
-        <section class="taas" >
-            <ul>
-                <li><h1>Samuel Stefan D.C Salvatierra</h1> </li>
-                <li><h2>BS-IT-1L</h2></li>
-            </ul>
-        </section>
-    </header>
-      <nav>
-            <ul>
-                <li><a href="#About me"><H2>About me</H2></a></li>
-                <li><a href="#Projects"><H2>Projects</H2></a></li>
-                <li><a href="#Contact"><H2>Contacts</H2></a></li>
-            </ul>
-        </nav>
-        
-    <section class= "Proj" id="Projects">
-        <h3>Projects</h3>
-        <p>Calculator in Pyton</p>
-        <img src="C:\Users\jacks\Desktop\ONLINE PORTFOLIO\CALCU.png" alt="">
-        <p>Home Automation in c++</p>
-        <img src="C:\Users\jacks\Desktop\ONLINE PORTFOLIO\C++.png" alt="">
-        <p>Horror Game in UNITY (c#)</p>
-        <img src="C:\Users\jacks\Desktop\ONLINE PORTFOLIO\UNITY.png" alt="">
-        <p>Snake Game in Pyhton </p>
-        <img src="C:\Users\jacks\Desktop\ONLINE PORTFOLIO\SNAKE.png" alt="">
-    
-    </section>
+.taas {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block; /* Fill entire viewport width */
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-left: -20px;
+    margin-bottom: -75px;
+    margin-top: -50px;
+}
 
-    <section class= "About" id="About me">
-        <h3>About Me</h3>
-        <p>My name is Sam and I'm a first year BS-IT student in NEUST. </p>
-        <p>Age: 18 </p>
-        <p>Gender: Male</p>
-        <p>Adress: San Leonardo, Nueva Ecija, Brgy. Rizal</p>
-    
-    </section>
+footer {
+    background-color: antiquewhite;
+    width: 100vw; /* Ensure full viewport width */
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    box-sizing: border-box; /* Prevent overflow */
+}
 
-    <section class= "Con" id="Contact">
-        <h3>Contact: </h3>
-        <p>jackspedicyteam@gmail.com</p>
+section {
+    padding: 70px;
+    width: 100%; /* Ensure section stretches across */
+    box-sizing: border-box;
+}
 
-    
-    </section class = "foot">
-    <footer><h4>   <p>&copy; 2024 Samuel. All rights reserved.</p></h4></footer>
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+li {
+    display: inline-block;
+    margin-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
 
-</body>
-</html>
+nav {
+    background-color: antiquewhite;
+    color: black;
+    padding-bottom: 10px;
+    margin-top: -20px;
+    width: 100%; /* Make sure the navigation fills the viewport */
+    box-sizing: border-box;
+}
+
+.Proj h3 {
+    padding: 10px;
+    margin-right: 1200px;
+    width: 100px;
+    background-color: antiquewhite;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li:hover a {
+    color: antiquewhite;
+    padding-left: 1px;
+    margin-left: 10px;
+}
+
+nav li:hover {
+    background-color: rgb(22, 20, 20);
+    padding-left: 1px;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+section img {
+    width: 100%; /* Ensure images stretch to fit the width */
+    max-width: 900px; /* Limit maximum width on larger screens */
+    border-radius: 10%;
+    box-shadow: gray 0 0 15px;
+}
+
+.class div h2 {
+    padding-bottom: 0;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    background-color: antiquewhite;
+    color: black;
+    margin-left: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 1015px) {
+    header {
+        background-color: antiquewhite;
+        color: black;
+        padding: 0;
+        margin: 0;
+        width: 100vw; /* Ensure full viewport width */
+        box-sizing: border-box;
+        display: block;
+    }
+
+    section img {
+        width: 100%; /* Make image responsive */
+        max-width: 600px;
+        border-radius: 10%;
+        box-shadow: gray 0 0 15px;
+    }
+
+    /* Ensure the nav stretches across the full screen */
+    nav {
+        width: 100%; /* Make navigation fill viewport */
+    }
+
+    footer {
+        width: 100vw; /* Ensure footer stretches fully */
+    }
+}
