@@ -1,156 +1,67 @@
-body{
-            
-    background-color: black;
-    color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
-  
-}
-header{
-    
-    background-color: antiquewhite;
-    color: black;
-    padding: 0px;
-    margin: 0;
-   
-    
-
-    
-}
-.taas{
-    font-family: 'Courier New', Courier, monospace;
-    display: inline-block;
-    margin-right: 0px;
-    padding-left: 20px;
-    padding-right: 30px;
-    margin-left: -20px;
-    margin-bottom: -75px;
-    margin-top: -50px;
-   
-    
-}
-.taas li
-{
-    font-family: 'Courier New', Courier, monospace;
-    margin-right: 100px;
-  
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Portfolio</title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
 
 
-footer{
-    background-color: antiquewhite;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-}
-section{
-    padding: 70px;
+<body>
     
     
-}
-ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}
-li{
-    display: inline-block;
-    margin-right: 20px;
-    padding-left: 20px;
-    margin-bottom: 10px;
-   
-    
-}
-nav{
-   
-    background-color: antiquewhite;
-    color: black;
-    padding-bottom: 10px;
-   
-    margin-top: -20px;
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/01/26/01/20250126011735-53Z8P6QX.js"></script>
     
     
+    <header >
+        
+        <section class="taas" >
+            <ul>
+                <li><h1>Samuel Stefan D.C Salvatierra</h1> </li>
+                <li><h2>BS-IT-1L</h2></li>
+            </ul>
+        </section>
+    </header>
+      <nav>
+            <ul>
+                <li><a href="#About me"><H2>About me</H2></a></li>
+                <li><a href="#Projects"><H2>Projects</H2></a></li>
+                <li><a href="#Contact"><H2>Contacts</H2></a></li>
+            </ul>
+        </nav>
+        
+    <section class= "Proj" id="Projects">
+        <h3>Projects</h3>
+        <p>Calculator in Pyton</p>
+        <img src="C:\Users\jacks\Desktop\ONLINE PORTFOLIO\CALCU.png" alt="">
+        <p>Home Automation in c++</p>
+        <img src="C:\Users\jacks\Desktop\ONLINE PORTFOLIO\C++.png" alt="">
+        <p>Horror Game in UNITY (c#)</p>
+        <img src="C:\Users\jacks\Desktop\ONLINE PORTFOLIO\UNITY.png" alt="">
+        <p>Snake Game in Pyhton </p>
+        <img src="C:\Users\jacks\Desktop\ONLINE PORTFOLIO\SNAKE.png" alt="">
+    
+    </section>
 
-}
+    <section class= "About" id="About me">
+        <h3>About Me</h3>
+        <p>My name is Sam and I'm a first year BS-IT student in NEUST. </p>
+        <p>Age: 18 </p>
+        <p>Gender: Male</p>
+        <p>Adress: San Leonardo, Nueva Ecija, Brgy. Rizal</p>
+    
+    </section>
 
-.Proj h3
-{
-    
-    padding: 10px;
-    margin-right: 1200px;
-    width: 100px;
-    background-color: antiquewhite;
-    color: black;
-    
-}
-.Proj p
-{
-    margin-left: 1px;
-}
-.About h3
-{
-    padding: 10px;
-    margin-right: 1200px;
-    width: 100px;
-    background-color: antiquewhite;
-    color: black;
-}
-.Con h1
-{
-    padding: 10px;
-    margin-right: 1200px;
-    background-color: antiquewhite;
-    color: black;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-nav li:hover a
-{
-    
-    color: antiquewhite;
-    padding-left: 1px;
-    margin-left: 10px;
-   
-}
-nav li:hover 
-{
-    background-color: rgb(22, 20, 20);
-    padding-left: 1px;
-    margin-left: 10px;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-section img
-{
-    width: 900px;
-    border-radius: 10%;
-    box-shadow: gray 0 0 15px;
-}
-.class div h2
-{
+    <section class= "Con" id="Contact">
+        <h3>Contact: </h3>
+        <p>jackspedicyteam@gmail.com</p>
 
-    padding-bottom: -10x;
-    margin-bottom: -10px;
-    margin-top: -10px;
-    background-color: antiquewhite; 
-    color: black;
-    margin-left: 1px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
-    
- 
-}
-@media screen and (max-width: 1015px) {
-    section img{
-    width: 600px;
-    border-radius: 10%;
-    box-shadow: gray 0 0 15px;
+    </section class = "foot">
+    <footer><h4>   <p>&copy; 2024 Samuel. All rights reserved.</p></h4></footer>
 
-    }
-}
+
+</body>
+</html>
