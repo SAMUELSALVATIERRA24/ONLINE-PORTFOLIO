@@ -16,7 +16,7 @@ header {
     box-sizing: border-box;
 }
 
-.taas {
+.Texthead{
     font-family: 'Courier New', Courier, monospace;
     display: inline-block; /* Fill entire viewport width */
     margin-right: 0;
@@ -26,27 +26,16 @@ header {
     margin-bottom: -75px;
     margin-top: -50px;
 }
-
-footer {
-    background-color: antiquewhite;
-    width: 100vw; /* Ensure full viewport width */
+a {
+    text-decoration: none;
     color: black;
-    padding: 10px 20px;
-    text-align: center;
-    box-sizing: border-box; /* Prevent overflow */
 }
+
 
 section {
     padding: 70px;
     width: 100%; /* Ensure section stretches across */
     box-sizing: border-box;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 li {
@@ -73,10 +62,6 @@ nav {
     color: black;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
 
 nav li:hover a {
     color: antiquewhite;
@@ -99,16 +84,16 @@ section img {
     border-radius: 10%;
     box-shadow: gray 0 0 15px;
 }
-
-.class div h2 {
-    padding-bottom: 0;
-    margin-bottom: -10px;
-    margin-top: -10px;
+footer {
     background-color: antiquewhite;
+    width: 100vw; /* Ensure full viewport width */
     color: black;
-    margin-left: 1px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px;
+    text-align: center;
+    box-sizing: border-box; /* Prevent overflow */
 }
+
+
 
 @media screen and (max-width: 1015px) {
     header {
