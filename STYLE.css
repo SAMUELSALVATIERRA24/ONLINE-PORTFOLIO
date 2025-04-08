@@ -1,24 +1,214 @@
+
+#box {
+    position: absolute;
+    top: 350px;
+    right: 20px;
+    height: 450px;
+    width: 290px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(147, 144, 144, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    animation: myAnim 10s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
+
+#corner-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: right;
+}
+
+#p-img {
+    display: flex;
+    justify-content: center;
+    margin: 3px 25px;
+    height:275px ;
+    width:250px ;
+}
+
+.card h2 {
+    margin: 5px 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 36px;
+}
+
+.card h4 {
+    margin: 16px 30px;
+    text-align: center;
+}
+
+.card h3 {
+    color: rgb(255, 255, 255);
+    margin: 4px 1px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card p {
+    background: rgba(42, 42, 42, 0.6); 
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    padding: 3px;
+    margin: 5px 30px 0 30px; 
+    height: 30px;
+    width: auto; 
+    box-sizing: border-box; 
+    border-radius: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px); 
+}
+
+
+
+.lanyard {
+  position: absolute;
+  top: 145px; 
+  bottom: 100px;
+  left: 89%;
+  
+  transform: translateX(-50%);
+  height: 30px;
+  width: 100%;
+  z-index: 10;
+}
+
+.lanyard-left,
+.lanyard-right {
+  position: absolute;
+  top: 0;
+  width: 28.3%;
+  height: 28px;
+  background: rgb(24, 31, 33);
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.lanyard-left {
+  left: 30%; 
+  transform: rotate(64deg); 
+}
+
+.lanyard-right {
+  right: 30%; 
+  transform: rotate(-64deg); 
+}
+
+
+#home-section {
+    padding: 30px;
+    margin: 80px;
+    margin-right:450px ;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    opacity: 1;
+    transition: opacity 1s ease 0s;
+    animation: myAnim2 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim2 {
+	0% {
+		transform: scale(0.5);
+		transform-origin: 50% 100%;
+	}
+
+	100% {
+		transform: scale(1);
+		transform-origin: 50% 100%;
+	}
+}
+#home-section:hover {
+    opacity: 0.8;
+    
+}
+
+#home-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#home-section h2 {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+#home-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+#home-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
 body {
-    background-color: black;
+    background: rgb(11,11,11);
+    background: linear-gradient(0deg, rgba(11,11,11,1) 0%, rgba(11,11,14,1) 37%, rgba(61,81,85,1) 100%);
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 header {
-    background-color: antiquewhite;
+    background-color: rgb(212, 201, 190);
     color: black;
     padding: 0;
     margin: 0;
-    width: 100vw; /* Ensure full viewport width */
+    width: 100vw; 
     box-sizing: border-box;
+    
+}
+h2 {
+    font-family: sans-serif;
+}
+h1 {
+    font-family: sans-serif;
 }
 
 .Texthead{
     font-family: 'Courier New', Courier, monospace;
-    display: inline-block; /* Fill entire viewport width */
+    display: inline-block; 
     margin-right: 0;
     padding-left: 20px;
     padding-right: 30px;
@@ -31,10 +221,16 @@ a {
     color: black;
 }
 
+.git {
+    color: white;
+}
+.fab {
+    color: white;
+}
 
 section {
     padding: 70px;
-    width: 100%; /* Ensure section stretches across */
+    width: 100%; 
     box-sizing: border-box;
 }
 
@@ -46,13 +242,16 @@ li {
 }
 
 nav {
-    background-color: antiquewhite;
+    background-color: rgb(212, 201, 190);
     color: black;
     padding-bottom: 10px;
     margin-top: -20px;
-    width: 100%; /* Make sure the navigation fills the viewport */
+    width: 100%; 
     box-sizing: border-box;
+    
+   
 }
+
 
 .Proj h3 {
     padding: 10px;
@@ -79,46 +278,174 @@ nav li:hover {
 }
 
 section img {
-    width: 100%; /* Ensure images stretch to fit the width */
-    max-width: 900px; /* Limit maximum width on larger screens */
+    width: 100%; 
+    max-width: 900px; 
+    border-radius: 10%;
+    box-shadow: gray 0 0 15px;
+}
+section video {
+    width: 100%; 
+    max-width: 900px; 
     border-radius: 10%;
     box-shadow: gray 0 0 15px;
 }
 footer {
     background-color: antiquewhite;
-    width: 100vw; /* Ensure full viewport width */
+    width: 100vw; 
     color: black;
     padding: 10px 20px;
     text-align: center;
-    box-sizing: border-box; /* Prevent overflow */
+    box-sizing: border-box; 
 }
 
+
+.cat{
+    margin-bottom:-12.5px ;
+}
+.cat img{
+    height: 100px;
+    top: 100px;
+}
+.cat2{
+    margin-bottom:-100px ;
+    margin-left: 80px;
+    
+}
+.cat2 img{
+    height: 84px;
+   
+}
+
+.sprite img {
+   
+    height: 100px;
+    
+  }
+.sprite{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: -49px;
+}
+
+ 
 
 
 @media screen and (max-width: 1015px) {
     header {
-        background-color: antiquewhite;
+        background-color: rgb(212, 201, 190);
         color: black;
         padding: 0;
         margin: 0;
-        width: 100vw; /* Ensure full viewport width */
+        width: 100vw; 
         box-sizing: border-box;
         display: block;
     }
 
     section img {
-        width: 100%; /* Make image responsive */
+        width: 120%;
+        max-width: 900px;
+        border-radius: 10%;
+        box-shadow: gray 0 0 15px;
+    }
+    section video {
+        width: 120%; 
         max-width: 900px;
         border-radius: 10%;
         box-shadow: gray 0 0 15px;
     }
 
-    /* Ensure the nav stretches across the full screen */
+  
     nav {
-        width: 100%; /* Make navigation fill viewport */
+        width: 100%; 
     }
 
     footer {
-        width: 100vw; /* Ensure footer stretches fully */
+        width: 100vw; 
     }
+    #home-section {
+        width: 100%;
+        max-width: 250px;
+        padding: 30px;
+        margin: 80px;
+        margin-right:450px ;
+        margin-top: 1000px;
+        background: rgba( 255, 255, 255, 0.25 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        opacity: 1;
+        transition: opacity 1s ease 0s;
+        animation: myAnim2 2s ease 0s 1 normal forwards;
+    }
+    @keyframes myAnim2 {
+        0% {
+            transform: scale(0.5);
+            transform-origin: 50% 100%;
+        }
+    
+        100% {
+            transform: scale(1);
+            transform-origin: 50% 100%;
+        }
+    }
+    #home-section:hover {
+        opacity: 0.8;
+    }
+    #box {
+        position: absolute;
+        top: 820px;
+        right: 50px;
+        height: 450px;
+        width: 290px;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba(147, 144, 144, 0.37);
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        animation: myAnim 10s ease 0s 1 normal forwards;
+    }
+    .sprite{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: -49px;
+    }
+  
+    .lanyard {
+        position: absolute;
+        top: 550px; 
+        bottom: 100px;
+        left: 51%;
+        
+        transform: translateX(-50%);
+        height: 30px;
+        width: 475%;
+        z-index: 10;
+    }
+    
+    .lanyard-left,
+    .lanyard-right {
+        position: absolute;
+        top: 0;
+        width: 28.2%;
+        height: 27px;
+        background: rgb(24, 31, 33);
+        border-radius: 10px;
+        z-index: 100;
+    }
+    
+    .lanyard-left {
+        left: 30%; 
+        transform: rotate(64deg); 
+    }
+    
+    .lanyard-right {
+        right: 30%; 
+        transform: rotate(-64deg); 
+    }
+    .chat {
+        position: sticky;
+        margin-left: -100px;
+    }
+  
 }
