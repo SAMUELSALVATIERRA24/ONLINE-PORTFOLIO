@@ -355,12 +355,14 @@ footer {
         max-width: 900px;
         border-radius: 10%;
         box-shadow: gray 0 0 15px;
+		margin-left: -25px;
     }
     section video {
         width: 120%; 
         max-width: 900px;
         border-radius: 10%;
         box-shadow: gray 0 0 15px;
+		margin-left: -25px;
     }
 
   
@@ -458,3 +460,4 @@ footer {
     }
   
 }
+
